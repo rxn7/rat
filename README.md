@@ -3,8 +3,9 @@ Rat is a very simplified cat clone that includes only stdio library. It's curren
 
 # Usage
 $ rat <path/to/file>
-## Example
-$ rat some/file.txt
+### Example
+$ rat some/file.txt   
+$ rat some/file.txt some/other/file.txt
 
 # Installation
 $ git clone https://github.com/rotthin/rat   
