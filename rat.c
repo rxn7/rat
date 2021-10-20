@@ -7,7 +7,7 @@
 
 static void print_content(const char* path) {
 	FILE* file = fopen(path, "rt");
-	if(!file) { /* Error opening the file. */
+	if(!file) {
 		printf("Failed to open %s.\n", path);
 		return;
     }
@@ -22,11 +22,11 @@ static void print_content(const char* path) {
 
 int main(int argc, char** argv) {
 	if(argc <= 1) {
-		puts("You haven't specified the file. Usage: rat <file>.");
+		puts("You haven't specified the file. Usage: rat <file(s)>.");
 		return 1;
 	}
 	
-	for(__uint8_t i=1; i<argc; i++) { /* Print content for each specified file. */
+	for(__uint8_t i=1; i<argc; i++) {
 		print_content(argv[i]);
 	}
 
