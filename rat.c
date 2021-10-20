@@ -17,8 +17,6 @@ static void print_content(const char* path) {
 		putchar(c);
 	}
 
-    // TODO: Buffered reading.
-
 	fclose(file);
 }
 
