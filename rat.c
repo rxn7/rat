@@ -22,7 +22,7 @@ static void print_content(const char* path) {
 
 int main(int argc, char** argv) {
 	if(argc <= 1) {
-		puts("You haven't specified the file. Usage: rat <file(s)>.");
+		puts("You haven't specified the file(s). Usage: rat <file(s)>.");
 		return 1;
 	}
 	

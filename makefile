@@ -1,4 +1,4 @@
-CFLAGS = -std=gnu11
+CFLAGS = -std=gnu11 -Wall -O3
 SOURCES = -c *.c
 HEADERS = -Isrc
 OBJS = rat.o
