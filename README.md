@@ -7,6 +7,6 @@ $ ```rat <file(s)>```
 $ ```rat file1.txt file2.txt``` 
 
 # Installation
-$ ```git clone https://github.com/rotthin/rat```  
+$ ```git clone https://github.com/rotth/rat```  
 $ ```cd rat```  
 $ ```make install```
