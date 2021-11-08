@@ -5,7 +5,7 @@ static void rat(const char* path) {
 	if(!file) {
 		printf("Failed to open %s.\n", path);
 		return;
-    }
+        }
 
 	char c=0;
 	while((c = fgetc(file)) != EOF) { 
@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 	
-	for(unsigned short i=1; i<argc; i++) {
+	for(unsigned short i=1; i<argc; ++i) {
 	        rat(argv[i]);
 	}
 
