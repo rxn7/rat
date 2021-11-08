@@ -1,19 +1,6 @@
-CFLAGS = -std=gnu11 -Wall -O3
-SOURCES = -c *.c
-HEADERS = -Isrc
-OBJS = rat.o
-
-all: compile link clean
+all:
+	gcc rat.c -o rat
 
 install: 
 	make
 	sudo cp ./rat /usr/bin/rat
-
-compile:
-	gcc $(SOURCES) $(HEADERS) $(CFLAGS)
-
-link:
-	gcc $(OBJS) -o rat
-
-clean:
-	rm *.o
