@@ -1,11 +1,6 @@
-/*
-*   rat - cat clone using only stdio.h library.
-*   https://github.com/rotthin/rat
-*/
-
 #include <stdio.h>
 
-static void print_content(const char* path) {
+static void rat(const char* path) {
 	FILE* file = fopen(path, "rt");
 	if(!file) {
 		printf("Failed to open %s.\n", path);
@@ -26,8 +21,8 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 	
-	for(__uint8_t i=1; i<argc; i++) {
-		print_content(argv[i]);
+	for(unsigned short i=1; i<argc; i++) {
+	        rat(argv[i]);
 	}
 
 	putchar('\n');
