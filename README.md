@@ -1,13 +1,12 @@
 # rat - simplified [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) clone.
-Rat is a very simplified cat clone that includes only stdio library. It's currently much slower than cat because it doesnt read the files chunk-by-chunk but char-by-char (which is fine for small files but not for larger ones).
+Rat is a very simplified GNU cat clone. It's much slower than cat because it doesnt read the files chunk-by-chunk but char-by-char (which is good for small files but not for larger ones).
 
 # Usage
-$ rat <path/to/file>
+$ ```rat <file(s)>```
 ### Example
-$ ```rat some/file.txt```  
-$ ```rat some/file.txt some/other/file.txt``` 
+$ ```rat file1.txt file2.txt``` 
 
 # Installation
-$ git clone https://github.com/rotthin/rat   
-$ cd rat   
-$ make install   
+$ ```git clone https://github.com/rotthin/rat```  
+$ ```cd rat```  
+$ ```make install```
