@@ -1,5 +1,5 @@
 all:
-	gcc rat.c -o rat
+	gcc rat.c -o rat -std=gnu99
 
 install: 
 	make
